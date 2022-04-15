@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 :root {
@@ -22,7 +24,29 @@ img {
     object-fit: cover;
 }
 
+nav {
+    background-color: rgba(127, 255, 212, 0.361);
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer img {
+    height: 1em;
+}
+
 /*   ----  Classes  ----   */
+.line {
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.nodisplay {
+    display: none;
+}
 
 /*   ----  IDs  ----   */
 #topterms {
@@ -47,4 +71,50 @@ img {
     border-radius: 50%;
     background-color: #00000000;
     color: #fff;
+}
+
+#menu-button {
+    background-color: #00000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    aspect-ratio: 1/1;
+    height: 1.1em;
+    cursor: pointer;
+}
+
+#navbar img {
+    aspect-ratio: 1/1;
+    height: 1.5em;
+}
+
+#search {
+    width: 40%;
+}
+
+body {
+    background-color: rgb(50, 50, 50);
+}
+
+/*  width 769*/
+@media (min-width: 769px) {
+
+    /*   ----  Global  ----   */
+    nav {
+        background-color: rgb(0, 255, 26);
+    }
+
+    /*   ----  IDs  ----   */
+    #topterms {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #top-remove-btn {
+        margin: 0 20px 0 0;
+        border-radius: 50%;
+    }
 }
