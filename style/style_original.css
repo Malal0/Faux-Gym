@@ -1,0 +1,393 @@
+/*-------- global --------*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+:root {
+  --themaincolor: rgb(18, 28, 56);
+  --thesecondcolor: rgb(182, 31, 31);
+  --transition: .7s;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 4px;
+  margin-inline: 5px;
+  transition: var(--transition);
+}
+
+body {
+  background: var(--themaincolor);
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url("/images/main.jpg");
+  background-size: cover;
+  background-position: right center;
+  color: white;
+  font-size: 30px;
+  overflow: hidden;
+
+  box-shadow: 1px 1px 80px black;
+  margin-bottom: 60px;
+  height: 100vh;
+}
+
+/*-------- the top part --------*/
+#topterms {
+  background: var(--themaincolor);
+  color: white;
+  width: 100%;
+  padding: 1% 5%;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .3 ease-in-out;
+}
+
+#top-remove-btn {
+  background-color: #00000000;
+  color: #fff;
+  border: 1px solid white;
+  padding: 8px 12px;
+  margin: 0;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#topterms a,
+.box a {
+  color: var(--thesecondcolor);
+  transition: .7s;
+}
+
+#topterms a:hover,
+.box a:hover {
+  color: rgb(255, 0, 0);
+  border-bottom: 1px solid;
+}
+
+#topterms img {
+  background: var(--thesecondcolor);
+  height: 25px;
+  border-radius: 50%;
+  padding: 4px;
+  text-align: center;
+  float: right;
+}
+
+#plandemicfaq {
+  background: var(--thesecondcolor);
+  color: white;
+  padding: .5%;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+}
+
+#plandemicfaq a {
+  color: var(--themaincolor);
+}
+
+#plandemicfaq a:hover {
+  color: rgb(75, 64, 158);
+  border-bottom: 1px solid;
+}
+
+#navbar {
+  background: rgb(18, 28, 56);
+  color: var();
+  padding: 0 1em;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+#navbar li {
+  padding: 0;
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#navbar a,
+select {
+  color: rgb(187, 187, 187);
+  font-size: 17px;
+  margin: 0 20px;
+  font-weight: 900;
+  text-align: center;
+}
+
+#navbar a:hover,
+select:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 35px rgba(187, 187, 187, 0.76);
+}
+
+#ulleft {
+  display: flex;
+  justify-content: space-between;
+}
+
+#ulright {
+  display: flex;
+}
+
+#ulleft img {
+  height: 3em;
+}
+
+select {
+  background: none;
+  /*color:rgb(187, 187, 187);
+  font-size: .7em;*/
+  text-transform: uppercase;
+  border: none;
+  transition: .07s;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  font-size: 17px;
+  font-weight: 900;
+  color: green;
+  border-radius: 5px;
+}
+
+#txt {
+  text-align: center;
+  padding-top: 10%;
+  border-radius: 10px;
+}
+
+#txt h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  font-weight: 900;
+}
+
+#join-btn {
+  background-color: rgba(182, 31, 31);
+  font-size: 2em;
+  font-weight: 900;
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+  width: 25%;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 30px black;
+  transition: .7s;
+}
+
+#join-btn:hover {
+  background-color: rgba(18, 28, 56);
+}
+
+#join-btn a {
+  color: white;
+}
+
+/*-------- the sub page --------*/
+
+.container {
+  width: 75%;
+  margin: auto;
+  box-sizing: border-box;
+  /*box-shadow: 1px 1px 5px rgba(16, 14, 34, 0.445)*/
+  ;
+  overflow: hidden;
+  padding-bottom: 4em;
+}
+
+.box {
+  /*background: rgb(190, 190, 190);*/
+
+  /*background-image: linear-gradient(90deg, var(--themaincolor), black);
+  opacity: .97;
+  box-shadow: 1px 1px 15px black;*/
+
+  color: rgb(255, 255, 255);
+  padding: 7em;
+  /* margin: 3em;*/
+  display: flex;
+}
+
+.box h1 {
+  font-size: 3em;
+  text-transform: capitalize;
+}
+
+.box img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.box-txt {
+  padding: 0 50px;
+}
+
+.flexlr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  /*flex-shrink: 1;*/
+}
+
+.flexrl {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  /*flex-shrink: 1;*/
+}
+
+/*-------- the footer --------*/
+footer {
+  background: var(--thesecondcolor);
+}
+
+footer {
+  color: rgb(187, 187, 187);
+  text-transform: uppercase;
+}
+
+footer a {
+  color: rgb(187, 187, 187);
+
+}
+
+footer a:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 35px rgba(187, 187, 187, 0.76);
+}
+
+#ftr-container {
+  padding: 2em 5em 0 5em;
+}
+
+#ftr {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+#ftr h3 {
+  margin-bottom: 1em;
+}
+
+#ftr-container img {
+  height: 3em;
+  width: 3em;
+  padding: 15px;
+}
+
+#logos img:hover {
+  border: 3px solid rgb(255, 255, 255);
+  padding: 13px;
+  border-radius: 25%;
+  box-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+
+#absolute-btm {
+  border-top: 1px solid rgb(187, 187, 187);
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: flex-start;
+}
+
+/*-------- 768px --------*/
+@media (max-width: 768px) {
+
+  /*body{
+    background: black;
+  }*/
+  #navbar {
+    height: 100%;
+    width: 50%;
+    float: right;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #plandemicfaq {
+    padding: 0 10%;
+  }
+
+  .container {
+    padding-bottom: 3em;
+  }
+
+  .flexlr,
+  .flexrl {
+    flex-direction: column;
+    padding: 5em;
+  }
+
+  #box h1,
+  #box p {
+    font-size: 1px;
+  }
+
+  .box-txt {
+    padding: 0;
+  }
+
+  #ftr h3 {
+    margin: 1em 0;
+  }
+
+  .ftr-box li {
+    margin-bottom: .5em;
+  }
+
+  #ftr {
+    justify-content: space-between;
+  }
+}
+
+/*-------- 480px --------*/
+@media (max-width: 480px) {
+  body {
+    background: rgb(30, 255, 0);
+  }
+}
+
+
+.moveUp {
+  position: absolute;
+  top: -100px;
+}
