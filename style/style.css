@@ -24,12 +24,19 @@ img {
     object-fit: cover;
 }
 
-.main-nav {
-    background-color: var(--maincolor);
-    height: 60px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+nav {
+    background-color: green;
+    /* not used */
+}
+
+nav img {
+    aspect-ratio: 1/1;
+    height: 1.5em;
+}
+
+nav a {
+    color: white;
+    text-transform: uppercase;
 }
 
 footer img {
@@ -37,6 +44,14 @@ footer img {
 }
 
 /*   ----  Classes  ----   */
+.main-nav {
+    background-color: var(--maincolor);
+    min-height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .line {
     background-color: #fff;
     height: 2px;
@@ -46,6 +61,13 @@ footer img {
 
 .nodisplay {
     display: none;
+}
+
+.ulFlex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .open {
@@ -105,15 +127,15 @@ footer img {
 #ul {
     background-color: #b61f1f;
     width: 100vw;
-    height: 93vh;
+    height: 50vh;
     z-index: 10;
     position: absolute;
     overflow: hidden;
+    /*padding: 2em;*/
 }
 
-#navbar img {
-    aspect-ratio: 1/1;
-    height: 1.5em;
+#ul li {
+    margin: 2em;
 }
 
 #search {

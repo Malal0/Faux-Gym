@@ -13,5 +13,6 @@ removeBtn.addEventListener("click", (e) => {
 
 menuBtn.addEventListener("click", (e) => {
     ul.classList.toggle("nodisplay");
+    ul.classList.toggle("ulFlex");
     menuBtn.classList.toggle("open");
 });
