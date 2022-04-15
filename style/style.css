@@ -87,6 +87,17 @@ footer img {
     transform: translate(0px, -8px) rotate(-45deg);
 }
 
+.joinBtn {
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 8px;
+    color: #fff;
+}
+
+.joinBtn:hover {
+    transform: scale(1.1);
+}
+
 /*   ----  IDs  ----   */
 #topterms {
     width: 100%;
@@ -151,7 +162,7 @@ footer img {
     background: url(/images/main.jpg);
     background-position: center;
     background-size: cover;
-
+    gap: 1.5em;
     color: #fff;
 }
 
