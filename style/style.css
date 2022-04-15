@@ -142,6 +142,23 @@ footer img {
     width: 40%;
 }
 
+#txt {
+    height: calc(70vh - 60px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url(/images/main.jpg);
+    background-position: center;
+    background-size: cover;
+
+    color: #fff;
+}
+
+#txt h1 {
+    text-align: center;
+}
+
 body {
     background-color: rgb(50, 50, 50);
 }
