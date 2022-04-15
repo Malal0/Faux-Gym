@@ -24,8 +24,8 @@ img {
     object-fit: cover;
 }
 
-nav {
-    background-color: rgba(127, 255, 212, 0.361);
+.main-nav {
+    background-color: var(--maincolor);
     height: 60px;
     display: flex;
     justify-content: space-evenly;
@@ -46,6 +46,23 @@ footer img {
 
 .nodisplay {
     display: none;
+}
+
+.open {
+    overflow: hidden;
+}
+
+.open :first-child {
+    transform: translate(0px, 8px) rotate(45deg);
+}
+
+.open :nth-child(2) {
+    transform: translateX(-20px);
+    background-color: #000000;
+}
+
+.open :last-child {
+    transform: translate(0px, -8px) rotate(-45deg);
 }
 
 /*   ----  IDs  ----   */
@@ -82,6 +99,16 @@ footer img {
     aspect-ratio: 1/1;
     height: 1.1em;
     cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+#ul {
+    background-color: #b61f1f;
+    width: 100vw;
+    height: 93vh;
+    z-index: 10;
+    position: absolute;
+    overflow: hidden;
 }
 
 #navbar img {

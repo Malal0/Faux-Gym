@@ -2,6 +2,7 @@
 const removeBtn = document.querySelector("#top-remove-btn");
 const topTerms = document.querySelector("#topterms");
 const menuBtn = document.querySelector("#menu-button");
+const ul = document.querySelector("#ul");
 
 //  Click Functions
 removeBtn.addEventListener("click", (e) => {
@@ -11,5 +12,6 @@ removeBtn.addEventListener("click", (e) => {
 });
 
 menuBtn.addEventListener("click", (e) => {
-    console.log(e);
-})
+    ul.classList.toggle("nodisplay");
+    menuBtn.classList.toggle("open");
+});
