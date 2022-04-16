@@ -24,11 +24,6 @@ img {
     object-fit: cover;
 }
 
-nav {
-    background-color: green;
-    /* not used */
-}
-
 nav img {
     aspect-ratio: 1/1;
     height: 1.5em;
@@ -98,8 +93,17 @@ footer img {
     transform: scale(1.1);
 }
 
+.main {
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-QeZI4kfO-ts%2FUFwYngEHLQI%2FAAAAAAAACPQ%2FqTKLVMZjj-Y%2Fs1600%2FTileable%2Bmetal%2Beroded%2Bscratch%2Btexture%2Bbackground%2B01.jpg&f=1&nofb=1);
+}
+
+.bGColor {
+    background-color: rgba(18, 28, 56, 0.93);
+}
+
 .container {
-    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2016%2F10%2F29%2F20%2F49%2Fseamless-1781533_640.png&f=1&nofb=1);
+    width: 80%;
+    margin: auto;
 }
 
 .box {
@@ -109,8 +113,7 @@ footer img {
     justify-content: center;
     gap: 2em;
     height: 100vh;
-    background-color: rgba(18, 28, 56, 0.9);
-    color: white
+    color: white;
 }
 
 .box>* {
@@ -119,11 +122,23 @@ footer img {
 
 .box>:first-child {
     order: 0;
+    text-transform: uppercase;
 }
 
 .box img {
     order: 1;
-    border: 4px solid black;
+}
+
+.underline {
+    color: #fff;
+    border-bottom: 2px solid #ffffff00;
+    padding-bottom: 1em;
+    transition: .5s;
+}
+
+.underline:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: .3em;
 }
 
 /*   ----  IDs  ----   */
@@ -170,7 +185,6 @@ footer img {
     z-index: 10;
     position: absolute;
     overflow: hidden;
-    /*padding: 2em;*/
 }
 
 #ul li {
