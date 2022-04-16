@@ -34,6 +34,10 @@ nav a {
     text-transform: uppercase;
 }
 
+footer {
+    background-color: var(--secondcolor);
+}
+
 footer img {
     height: 1em;
 }
@@ -87,6 +91,7 @@ footer img {
     border-radius: 4px;
     padding: 8px;
     color: #fff;
+    transition: .3s ease-in-out;
 }
 
 .joinBtn:hover {
@@ -133,7 +138,7 @@ footer img {
     color: #fff;
     border-bottom: 2px solid #ffffff00;
     padding-bottom: 1em;
-    transition: .5s;
+    transition: .5s ease-out;
 }
 
 .underline:hover {
@@ -210,6 +215,41 @@ footer img {
 
 #txt h1 {
     text-align: center;
+}
+
+#ftr {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, 10em);
+}
+
+#ftr>* {
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    margin: .5em;
+    color: #fff;
+}
+
+#ftr h3 {
+    text-transform: uppercase;
+}
+
+#ftr a {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.ftr-box ul li {
+    margin-left: .25em;
+    padding-bottom: .3em;
+}
+
+#ftr>:last-child {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    grid-column-start: span 2;
 }
 
 body {
