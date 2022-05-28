@@ -119,6 +119,7 @@ footer img {
     gap: 2em;
     height: 100vh;
     color: white;
+    border: 2px solid white;
 }
 
 .box>* {
@@ -307,5 +308,31 @@ body {
     #top-remove-btn {
         margin: 0 20px 0 0;
         border-radius: 50%;
+    }
+}
+
+/*  width 896   */
+@media (min-width: 896px) {
+    .box {
+        display: grid;
+        gap: 0;
+        height: 100vh;
+        color: white;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .box>:last-child {
+        order: 0;
+    }
+
+    .box>* {
+        order: 0;
+    }
+
+
+
+    .box img {
+        order: 0;
     }
 }
