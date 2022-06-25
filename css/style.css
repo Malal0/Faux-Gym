@@ -38,7 +38,6 @@ img {
 
 #nav-bar {
   padding-top: 21px;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,6 +170,64 @@ img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+#plans h3 {
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 62px 0;
+}
+
+#plans #payment-plan-container {
+  width: calc(100% - 32px);
+  margin: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#plans .payment-plan {
+  background-color: var(--slightlyDarkerGray);
+  width: 82px;
+  height: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  margin-bottom: 60px;
+}
+
+#plans .payment-plan h4 {
+  font-size: 24px;
+}
+
+#plans .payment-plan h5 {
+  font-size: 10px;
+}
+
+#plans .payment-plan p {
+  font-size: 5px;
+  width: 80%;
+}
+
+#plans .payment-plan a {
+  font-size: 10px;
+  color: var(--mainColor);
+  text-decoration: none;
 }
 
 #first-accent {
