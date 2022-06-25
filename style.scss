@@ -27,6 +27,20 @@ img {
     width: 50px;
 }
 
+#nav-bar {
+    padding-top: 21px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    img {
+        height: 20px;
+        object-fit: cover;
+        width: fit-content;
+    }
+}
+
 #hero-section {
     background-image: url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     width: 100%;
@@ -34,6 +48,17 @@ img {
     background-size: cover;
     background-position: 51%;
     color: #ffffff;
+
+    #cta-container {
+        background-color: hsla(0, 0%, 0%, 0.62);
+        backdrop-filter: blur(30px);
+        width: 190px;
+        height: 244px;
+        float: right;
+        transform: translateX(16px) translateY(60px);
+        text-align: end;
+        padding-right: 1em;
+    }
 }
 
 #content-section {
