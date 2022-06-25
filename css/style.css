@@ -11,6 +11,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .margin-container {
@@ -41,9 +42,16 @@ img {
 
 #content-section #content-card-container .content-card {
   background-color: var(--secondColor);
-  color: var(--lightGray);
 }
 
 #content-section #content-card-container .content-card h3 {
+  color: var(--mainColor);
+}
+
+#content-section #content-card-container .content-card p {
+  color: var(--lightGray);
+}
+
+#content-section #content-card-container .content-card a {
   color: var(--mainColor);
 }

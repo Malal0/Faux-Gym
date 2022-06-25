@@ -11,6 +11,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .margin-container {
@@ -44,9 +45,16 @@ img {
 
         .content-card {
             background-color: var(--secondColor);
-            color: var(--lightGray);
 
             h3 {
+                color: var(--mainColor);
+            }
+
+            p {
+                color: var(--lightGray)
+            }
+
+            a {
                 color: var(--mainColor);
             }
         }
