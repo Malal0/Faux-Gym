@@ -230,6 +230,10 @@ img {
   text-decoration: none;
 }
 
+footer {
+  background-color: var(--mainColor);
+}
+
 #first-accent {
   height: 55px;
   width: auto;
