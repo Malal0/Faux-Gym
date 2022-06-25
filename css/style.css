@@ -166,6 +166,11 @@ img {
   text-transform: uppercase;
   font-size: 11px;
   margin-left: 36px;
+  border-bottom: 2px solid var(--mainColor);
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #first-accent {
