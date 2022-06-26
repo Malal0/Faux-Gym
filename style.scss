@@ -199,6 +199,29 @@ img {
 
 footer {
     background-color: var(--mainColor);
+    color: var(--lightGray);
+
+    .footer-links-block-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .footer-links-block {
+            width: 130px;
+        }
+    }
+
+    .footer-social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .copyright-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 #first-accent {
