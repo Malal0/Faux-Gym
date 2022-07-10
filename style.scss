@@ -163,6 +163,7 @@ img {
         margin: 16px;
         display: flex;
         justify-content: space-between;
+        flex-flow: column;
     }
 
     .payment-plan {
@@ -213,7 +214,7 @@ footer {
 
     .footer-social-links {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .copyright-line {
