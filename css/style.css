@@ -252,6 +252,25 @@ footer .footer-links-block-container {
 
 footer .footer-links-block-container .footer-links-block {
   width: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  gap: 6px;
+  text-transform: capitalize;
+}
+
+footer .footer-links-block-container .footer-links-block h6 {
+  font-size: 18px;
+}
+
+footer .footer-links-block-container .footer-links-block a {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 footer .footer-social-links {

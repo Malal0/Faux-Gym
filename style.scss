@@ -209,6 +209,20 @@ footer {
 
         .footer-links-block {
             width: 130px;
+            display: flex;
+            flex-flow: column;
+            gap: 6px;
+            text-transform: capitalize;
+
+            h6 {
+                font-size: 18px;
+            }
+
+            a {
+                font-size: 14px;
+                color: #ffffff;
+                text-decoration: none;
+            }
         }
     }
 
