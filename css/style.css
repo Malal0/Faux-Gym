@@ -20,6 +20,7 @@
 
 body {
   background-color: var(--mainBg);
+  min-width: 270px;
 }
 
 img {
@@ -63,6 +64,7 @@ img {
   background-size: cover;
   background-position: 51%;
   color: #ffffff;
+  background-color: var(--secondColor);
   position: relative;
 }
 
@@ -150,6 +152,7 @@ img {
   height: 302px;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: var(--mainColor);
 }
 
 #content-section #content-card-container .content-card p {
@@ -212,20 +215,20 @@ img {
 }
 
 #plans .payment-plan h4 {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 #plans .payment-plan h5 {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 #plans .payment-plan p {
-  font-size: 5px;
+  font-size: 10px;
   width: 80%;
 }
 
 #plans .payment-plan a {
-  font-size: 10px;
+  font-size: 14px;
   color: var(--mainColor);
   text-decoration: none;
 }
