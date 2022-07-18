@@ -204,12 +204,10 @@ img {
 
             &.first {
                 text-align: end;
-                // padding: 0 10px 0 0;
             }
 
             &.second {
                 text-align: start;
-                // padding: 0 0 0 10px;
             }
         }
     }
@@ -218,17 +216,19 @@ img {
 footer {
     background-color: var(--mainColor);
     color: var(--lightGray);
+    padding: 2.5em 0;
 
     .footer-links-block-container {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        gap: 2em;
 
         .footer-links-block {
             width: 130px;
             display: flex;
             flex-flow: column;
-            gap: 6px;
+            gap: 1em;
             text-transform: capitalize;
 
             h6 {
@@ -253,6 +253,15 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 10px;
+        font-size: .8em;
+        font-weight: bold;
+        margin: 2em 0 0 0;
+        height: 1.5em;
+
+        img {
+            height: 100%;
+            width: fit-content;
+        }
     }
 }
 

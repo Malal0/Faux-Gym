@@ -249,6 +249,7 @@ img {
 footer {
   background-color: var(--mainColor);
   color: var(--lightGray);
+  padding: 2.5em 0;
 }
 
 footer .footer-links-block-container {
@@ -260,6 +261,7 @@ footer .footer-links-block-container {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 2em;
 }
 
 footer .footer-links-block-container .footer-links-block {
@@ -271,7 +273,7 @@ footer .footer-links-block-container .footer-links-block {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  gap: 6px;
+  gap: 1em;
   text-transform: capitalize;
 }
 
@@ -305,6 +307,17 @@ footer .copyright-line {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+  font-size: .8em;
+  font-weight: bold;
+  margin: 2em 0 0 0;
+  height: 1.5em;
+}
+
+footer .copyright-line img {
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #first-accent {
