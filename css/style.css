@@ -209,7 +209,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 8px;
+  gap: 2em;
   /*36px*/
   margin-bottom: 36px;
 }
@@ -231,6 +231,19 @@ img {
   font-size: 14px;
   color: var(--mainColor);
   text-decoration: none;
+}
+
+#plans .payment-plan .plan-minicontainer {
+  width: 50%;
+  margin: 22px 0;
+}
+
+#plans .payment-plan .plan-minicontainer.first {
+  text-align: end;
+}
+
+#plans .payment-plan .plan-minicontainer.second {
+  text-align: start;
 }
 
 footer {

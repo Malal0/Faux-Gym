@@ -175,7 +175,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 8px;
+        gap: 2em;
         /*36px*/
         margin-bottom: 36px;
 
@@ -196,6 +196,21 @@ img {
             font-size: 14px;
             color: var(--mainColor);
             text-decoration: none;
+        }
+
+        .plan-minicontainer {
+            width: 50%;
+            margin: 22px 0;
+
+            &.first {
+                text-align: end;
+                // padding: 0 10px 0 0;
+            }
+
+            &.second {
+                text-align: start;
+                // padding: 0 0 0 10px;
+            }
         }
     }
 }
