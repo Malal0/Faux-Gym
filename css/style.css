@@ -296,6 +296,11 @@ footer .footer-social-links {
           justify-content: space-between;
 }
 
+footer .footer-social-links img {
+  height: 1.5em;
+  width: 1.5em;
+}
+
 footer .copyright-line {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -246,6 +246,11 @@ footer {
     .footer-social-links {
         display: flex;
         justify-content: space-between;
+
+        img {
+            height: 1.5em;
+            width: 1.5em;
+        }
     }
 
     .copyright-line {
