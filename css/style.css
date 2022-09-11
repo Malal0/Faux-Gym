@@ -294,6 +294,7 @@ footer .footer-social-links {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-block: 2em;
 }
 
 footer .footer-social-links img {
