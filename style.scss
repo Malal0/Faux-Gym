@@ -248,6 +248,12 @@ footer {
         justify-content: space-between;
         padding-block: 2em;
 
+        a {
+            :hover {
+                scale: 1.1;
+            }
+        }
+
         img {
             height: 1.5em;
             width: 1.5em;

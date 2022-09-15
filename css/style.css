@@ -297,6 +297,10 @@ footer .footer-social-links {
   padding-block: 2em;
 }
 
+footer .footer-social-links a :hover {
+  scale: 1.1;
+}
+
 footer .footer-social-links img {
   height: 1.5em;
   width: 1.5em;
