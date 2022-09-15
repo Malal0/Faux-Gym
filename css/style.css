@@ -289,6 +289,8 @@ footer .footer-links-block-container .footer-links-block a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  -webkit-transition: border 250ms ease-in;
+  transition: border 250ms ease-in;
 }
 
 footer .footer-links-block-container .footer-links-block a:hover {
