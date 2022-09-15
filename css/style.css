@@ -285,6 +285,18 @@ footer .footer-links-block-container .footer-links-block a {
   font-size: 14px;
   color: #ffffff;
   text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+footer .footer-links-block-container .footer-links-block a:hover {
+  border-bottom: 1px solid white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  scale: 1.05;
 }
 
 footer .footer-social-links {
