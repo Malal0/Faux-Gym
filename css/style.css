@@ -79,9 +79,10 @@ img {
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
   width: 190px;
-  float: right;
-  -webkit-transform: translateX(16px) translateY(62px);
-          transform: translateX(16px) translateY(62px);
+  position: absolute;
+  right: 0;
+  -webkit-transform: translateY(62px);
+          transform: translateY(62px);
   text-align: end;
   padding: 1em 1em 1em 0;
 }
@@ -91,7 +92,7 @@ img {
   font-size: 32px;
 }
 
-#hero-section #cta-container #cta #hero-btn {
+#hero-section #hero-btn {
   color: #ffffff;
   background-color: var(--mainColor);
   border: none;
@@ -100,9 +101,10 @@ img {
   padding: 0 20px;
   border-radius: 8px;
   text-transform: uppercase;
-  position: fixed;
-  right: 45%;
-  bottom: -25%;
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  translate: -50% -50%;
 }
 
 #content-section h2 {
