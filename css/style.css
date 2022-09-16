@@ -21,6 +21,7 @@
 body {
   background-color: var(--mainBg);
   min-width: 270px;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -107,6 +108,19 @@ img {
   translate: -50% -50%;
 }
 
+#hero-section #hero-btn:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(1.05);
+          filter: brightness(1.05);
+  scale: 1.01;
+}
+
+#hero-section #hero-btn:active {
+  scale: .999;
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
 #content-section h2 {
   color: var(--secondColor);
   margin: 45px auto;
@@ -177,6 +191,12 @@ img {
   width: fit-content;
 }
 
+#plans {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 #plans h3 {
   font-size: 32px;
   text-transform: uppercase;
@@ -186,6 +206,7 @@ img {
 
 #plans #payment-plan-container {
   width: calc(100% - 32px);
+  height: 600px;
   margin: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,6 +223,7 @@ img {
 #plans .payment-plan {
   background-color: var(--slightlyDarkerGray);
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,9 +233,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2em;
-  /*36px*/
+  gap: 2.25em;
   margin-bottom: 36px;
+  font-weight: 300;
 }
 
 #plans .payment-plan h4 {
@@ -222,6 +244,8 @@ img {
 
 #plans .payment-plan h5 {
   font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 #plans .payment-plan p {
@@ -233,11 +257,13 @@ img {
   font-size: 14px;
   color: var(--mainColor);
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 #plans .payment-plan .plan-minicontainer {
   width: 50%;
   margin: 22px 0;
+  gap: 1em;
 }
 
 #plans .payment-plan .plan-minicontainer.first {
@@ -246,6 +272,11 @@ img {
 
 #plans .payment-plan .plan-minicontainer.second {
   text-align: start;
+}
+
+#plans .payment-plan .plan-minicontainer p {
+  width: 100px;
+  text-transform: uppercase;
 }
 
 footer {
@@ -335,7 +366,6 @@ footer .copyright-line {
   gap: 10px;
   font-size: .8em;
   font-weight: bold;
-  margin: 2em 0 0 0;
   height: 1.5em;
 }
 
