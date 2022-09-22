@@ -45,7 +45,7 @@
 body {
     background-color: var(--mainBg);
     min-width: 270px;
-    width: 100%;
+    width: 100vw;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -439,3 +439,5 @@ footer {
         z-index: -1;
     }
 }
+
+@media (min-width: 428px) {}
