@@ -64,6 +64,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin: 0 1em;
 
     img {
         height: 20px;
@@ -134,7 +135,6 @@ img {
 
 .main-content {
     width: 100%;
-    // border: 1px solid red;
 
     h2 {
         color: var(--darkText);
@@ -143,7 +143,7 @@ img {
         text-transform: uppercase;
         text-align: center;
         width: 234px;
-        // border: 1px solid yellow;
+        font-weight: 500;
     }
 
     #content-card-container {
@@ -166,12 +166,12 @@ img {
                 text-transform: uppercase;
                 font-weight: 900;
                 font-size: 32px;
-                margin-left: 36px;
+                margin-inline: 36px;
             }
 
             img {
                 width: 100%;
-                height: 302px;
+                aspect-ratio: .95;
                 object-fit: cover;
                 background-color: var(--mainColor);
             }
@@ -181,14 +181,14 @@ img {
                 text-transform: uppercase;
                 font-size: 11px;
                 width: 217px;
-                margin-left: 36px;
+                margin-inline: 36px;
             }
 
             a {
                 color: var(--mainColor);
                 text-transform: uppercase;
                 font-size: 11px;
-                margin-left: 36px;
+                margin-inline: 36px;
                 border-bottom: 2px solid var(--mainColor);
                 text-decoration: none;
                 width: fit-content;
@@ -444,8 +444,93 @@ footer {
     }
 }
 
-@media (min-width: 425px) {
-    body {
-        background-color: red;
+@media (min-width: 420px) {
+    #hero-section {
+        background-image: url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        height: auto;
+        aspect-ratio: .57;
+
+        #linearGrad {
+            height: 72%;
+        }
+
+        #cta-container {
+            background-color: hsla(0, 0%, 0%, 0.62);
+            backdrop-filter: blur(30px);
+            width: 69%;
+            position: absolute;
+            right: 0;
+            top: 48%;
+            transform: translateY(-50%);
+            text-align: end;
+            padding: 1em 1em 1em 0;
+
+            #cta {
+                #hero-cta {
+                    font-size: 44.82px;
+                }
+            }
+        }
+
+        #hero-btn {
+            font-size: 72.21px;
+            padding: 0 40px;
+        }
+    }
+
+    .main-content {
+        width: 100%;
+
+        h2 {
+            font-size: 45px;
+            margin: 45px auto;
+            width: 287px;
+        }
+
+        #content-card-container {
+            gap: 200px;
+
+            .content-card {
+                background-color: var(--mainCardBg);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: calc(100% - 2em);
+                aspect-ratio: .53;
+                margin: 0 1em;
+
+
+                h3 {
+                    color: var(--mainColor);
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    font-size: 45px;
+                    margin-inline: 49px;
+                }
+
+                img {
+                    height: auto;
+                    aspect-ratio: 1.04;
+                }
+
+                p {
+                    color: var(--lightText);
+                    text-transform: uppercase;
+                    width: 297px;
+                    margin-inline: 49px;
+                }
+
+                a {
+                    color: var(--mainColor);
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    margin-inline: 49px;
+                    border-bottom: 2px solid var(--mainColor);
+                    text-decoration: none;
+                    width: fit-content;
+                    padding-bottom: 7px;
+                }
+            }
+        }
     }
 }
