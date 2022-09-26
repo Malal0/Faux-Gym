@@ -541,10 +541,6 @@ footer {
         height: auto;
         aspect-ratio: .94;
 
-        #linearGrad {
-            height: 72%;
-        }
-
         #cta-container {
             background-color: hsla(0, 0%, 0%, 0.62);
             backdrop-filter: blur(30px);
@@ -566,6 +562,54 @@ footer {
         #hero-btn {
             font-size: 72.21px;
             padding: 0 40px;
+        }
+    }
+
+    .main-content {
+        width: 100%;
+
+        h2 {
+            font-size: 45px;
+            margin: 45px auto;
+            width: 287px;
+        }
+
+        #content-card-container {
+            gap: 200px;
+
+            .content-card {
+                background-color: var(--mainCardBg);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: calc(100% - 2em);
+                aspect-ratio: .53;
+                margin: 0 1em;
+
+
+                h3 {
+                    font-size: 48px;
+                    margin-inline: 49px;
+                }
+
+                img {
+                    height: auto;
+                    aspect-ratio: 1;
+                }
+
+                p {
+                    width: 281px;
+                    margin-inline: 49px;
+                    font-size: 14px;
+                }
+
+                a {
+                    font-size: 16px;
+                    margin-inline: 49px;
+                    width: fit-content;
+                    padding-bottom: 7px;
+                }
+            }
         }
     }
 }
