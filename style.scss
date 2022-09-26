@@ -579,11 +579,10 @@ footer {
 
             .content-card {
                 background-color: var(--mainCardBg);
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
                 width: calc(100% - 2em);
-                aspect-ratio: .53;
+                aspect-ratio: 1.89;
                 margin: 0 1em;
 
                 h3 {
@@ -609,10 +608,9 @@ footer {
                     padding-bottom: 7px;
                 }
 
-                &>:nth-child(2) {
-                    border: red 1px solid;
-                    order: 4;
-                }
+                // &>:nth-child(2) {
+                //     order: 4;
+                // }
             }
         }
     }
