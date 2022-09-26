@@ -534,3 +534,38 @@ footer {
         }
     }
 }
+
+@media (min-width: 760px) {
+    #hero-section {
+        background-image: url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+        height: auto;
+        aspect-ratio: .94;
+
+        #linearGrad {
+            height: 72%;
+        }
+
+        #cta-container {
+            background-color: hsla(0, 0%, 0%, 0.62);
+            backdrop-filter: blur(30px);
+            width: 69%;
+            position: absolute;
+            right: 0;
+            top: 48%;
+            transform: translateY(-50%);
+            text-align: end;
+            padding: 1em 1em 1em 0;
+
+            #cta {
+                #hero-cta {
+                    font-size: 44.82px;
+                }
+            }
+        }
+
+        #hero-btn {
+            font-size: 72.21px;
+            padding: 0 40px;
+        }
+    }
+}
