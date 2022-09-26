@@ -663,4 +663,10 @@ footer .copyright-line img {
     width: fit-content;
     padding-bottom: 7px;
   }
+  .main-content #content-card-container .content-card > :nth-child(2) {
+    border: red 1px solid;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
 }

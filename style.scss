@@ -586,7 +586,6 @@ footer {
                 aspect-ratio: .53;
                 margin: 0 1em;
 
-
                 h3 {
                     font-size: 48px;
                     margin-inline: 49px;
@@ -608,6 +607,11 @@ footer {
                     margin-inline: 49px;
                     width: fit-content;
                     padding-bottom: 7px;
+                }
+
+                &>:nth-child(2) {
+                    border: red 1px solid;
+                    order: 4;
                 }
             }
         }
