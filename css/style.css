@@ -207,6 +207,14 @@ img {
   width: fit-content;
 }
 
+.main-content #content-card-container .content-card .first-child {
+  display: none;
+}
+
+.main-content #content-card-container .content-card .second-child {
+  display: none;
+}
+
 #plans {
   height: -webkit-fit-content;
   height: -moz-fit-content;

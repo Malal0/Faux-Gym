@@ -193,6 +193,14 @@ img {
                 text-decoration: none;
                 width: fit-content;
             }
+
+            .first-child {
+                display: none;
+            }
+
+            .second-child {
+                display: none;
+            }
         }
     }
 }
