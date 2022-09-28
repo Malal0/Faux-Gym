@@ -666,4 +666,10 @@ footer .copyright-line img {
     width: fit-content;
     padding-bottom: 7px;
   }
+  .main-content #content-card-container .content-card .first-child {
+    display: block;
+  }
+  .main-content #content-card-container .content-card .second-child {
+    display: block;
+  }
 }
