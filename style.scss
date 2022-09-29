@@ -627,6 +627,9 @@ footer {
         #content-card-container-wide {
             display: flex;
             flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
             gap: 200px;
 
             .content-card {
