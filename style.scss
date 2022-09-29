@@ -635,7 +635,8 @@ footer {
                 justify-content: center;
                 align-items: center;
                 width: calc(100% - 2em);
-                // aspect-ratio: ;
+                max-width: 708px;
+                aspect-ratio: 1.89;
                 margin: 0 1em;
 
                 h3 {
@@ -649,7 +650,7 @@ footer {
                 img {
                     object-fit: cover;
                     background-color: var(--mainColor);
-                    width: 374.63px;
+                    width: 100%;
                     aspect-ratio: 1;
                 }
 

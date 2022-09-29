@@ -693,6 +693,8 @@ footer .copyright-line img {
         -ms-flex-align: center;
             align-items: center;
     width: calc(100% - 2em);
+    max-width: 708px;
+    aspect-ratio: 1.89;
     margin: 0 1em;
   }
   .main-content #content-card-container-wide .content-card h3 {
@@ -706,7 +708,7 @@ footer .copyright-line img {
     -o-object-fit: cover;
        object-fit: cover;
     background-color: var(--mainColor);
-    width: 374.63px;
+    width: 100%;
     aspect-ratio: 1;
   }
   .main-content #content-card-container-wide .content-card p {
