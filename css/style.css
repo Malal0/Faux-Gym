@@ -215,6 +215,10 @@ img {
   display: none;
 }
 
+.main-content #content-card-container-wide {
+  display: none;
+}
+
 #plans {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -633,6 +637,7 @@ footer .copyright-line img {
     width: 287px;
   }
   .main-content #content-card-container {
+    display: none;
     gap: 200px;
   }
   .main-content #content-card-container .content-card {
@@ -670,6 +675,9 @@ footer .copyright-line img {
     display: block;
   }
   .main-content #content-card-container .content-card .second-child {
+    display: block;
+  }
+  .main-content #content-card-container-wide {
     display: block;
   }
 }

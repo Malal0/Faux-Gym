@@ -203,6 +203,10 @@ img {
             }
         }
     }
+
+    #content-card-container-wide {
+        display: none;
+    }
 }
 
 #plans {
@@ -583,9 +587,11 @@ footer {
         }
 
         #content-card-container {
+            display: none;
             gap: 200px;
 
             .content-card {
+
                 background-color: var(--mainCardBg);
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -624,6 +630,10 @@ footer {
                     display: block;
                 }
             }
+        }
+
+        #content-card-container-wide {
+            display: block;
         }
     }
 }
