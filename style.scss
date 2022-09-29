@@ -625,13 +625,18 @@ footer {
         }
 
         #content-card-container-wide {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            gap: 200px;
 
             .content-card {
                 background-color: var(--mainCardBg);
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                width: calc(100% - 2em);
+                // aspect-ratio: ;
+                margin: 0 1em;
 
                 h3 {
                     font-size: 48px;
