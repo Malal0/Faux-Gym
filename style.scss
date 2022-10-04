@@ -587,14 +587,14 @@ footer {
         }
 
         #content-card-container {
-            display: grid;
             gap: 200px;
 
             .content-card {
 
                 background-color: var(--mainCardBg);
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(5, 1fr);
                 width: calc(100% - 2em);
                 aspect-ratio: 1.89;
                 margin: 0 1em;
@@ -620,6 +620,14 @@ footer {
                     margin-inline: 49px;
                     width: fit-content;
                     padding-bottom: 7px;
+                }
+
+                &>:first-child {
+                    background-color: greenyellow;
+                }
+
+                &>:nth-child(2) {
+                    opacity: .2;
                 }
             }
         }

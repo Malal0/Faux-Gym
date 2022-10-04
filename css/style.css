@@ -637,16 +637,16 @@ footer .copyright-line img {
     width: 287px;
   }
   .main-content #content-card-container {
-    display: -ms-grid;
-    display: grid;
     gap: 200px;
   }
   .main-content #content-card-container .content-card {
     background-color: var(--mainCardBg);
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
     width: calc(100% - 2em);
     aspect-ratio: 1.89;
     margin: 0 1em;
@@ -671,5 +671,11 @@ footer .copyright-line img {
     width: -moz-fit-content;
     width: fit-content;
     padding-bottom: 7px;
+  }
+  .main-content #content-card-container .content-card > :first-child {
+    background-color: greenyellow;
+  }
+  .main-content #content-card-container .content-card > :nth-child(2) {
+    opacity: .2;
   }
 }
