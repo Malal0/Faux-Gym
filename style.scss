@@ -623,32 +623,29 @@ footer {
                 }
 
                 &>:first-child {
-                    background-color: greenyellow;
-                    grid-column-start: 2;
+                    grid-column-start: 1;
                     grid-column-end: 2;
-                    grid-row-start: 1;
-                    grid-row-end: 1;
+                    grid-row-start: 2;
+                    grid-row-end: 2;
                 }
 
                 &>:nth-child(2) {
-                    grid-column-start: 3;
+                    grid-column-start: 2;
                     grid-column-end: 6;
                     grid-row-start: 1;
                     grid-row-end: 6;
                 }
 
                 &>:nth-child(3) {
-                    background-color: rgb(47, 127, 255);
-                    grid-column-start: 2;
+                    grid-column-start: 1;
                     grid-column-end: 2;
-                    grid-row-start: 2;
-                    grid-row-end: 2;
+                    grid-row-start: 3;
+                    grid-row-end: 3;
                 }
 
                 &>:last-child {
-                    background-color: rgb(255, 54, 47);
-                    grid-column-start: 4;
-                    grid-column-end: 4;
+                    grid-column-start: 1;
+                    grid-column-end: 2;
                     grid-row-start: 4;
                     grid-row-end: 4;
                 }
