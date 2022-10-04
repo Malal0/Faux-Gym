@@ -587,7 +587,7 @@ footer {
         }
 
         #content-card-container {
-            display: none;
+            display: grid;
             gap: 200px;
 
             .content-card {
@@ -624,67 +624,70 @@ footer {
             }
         }
 
-        #content-card-container-wide {
-            display: flex;
-            flex-direction: column;
+        // #content-card-container-wide {
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: center;
+        //     align-items: center;
+        //     gap: 200px;
 
-            justify-content: center;
-            align-items: center;
-            gap: 200px;
+        //     .content-card {
+        //         background-color: var(--mainCardBg);
+        //         display: flex;
+        //         justify-content: center;
+        //         align-items: center;
+        //         width: calc(100% - 2em);
+        //         max-width: 708px;
+        //         aspect-ratio: 1.89;
+        //         margin: 0 1em;
 
-            .content-card {
-                background-color: var(--mainCardBg);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: calc(100% - 2em);
-                max-width: 708px;
-                aspect-ratio: 1.89;
-                margin: 0 1em;
+        //         h3 {
+        //             font-size: 48px;
+        //             margin-inline: 49px;
+        //             color: var(--mainColor);
+        //             text-transform: uppercase;
+        //             font-weight: 900;
+        //         }
 
-                h3 {
-                    font-size: 48px;
-                    margin-inline: 49px;
-                    color: var(--mainColor);
-                    text-transform: uppercase;
-                    font-weight: 900;
-                }
+        //         img {
+        //             object-fit: cover;
+        //             background-color: var(--mainColor);
+        //             height: 100%;
+        //             aspect-ratio: 1;
+        //         }
 
-                img {
-                    object-fit: cover;
-                    background-color: var(--mainColor);
-                    width: 100%;
-                    aspect-ratio: 1;
-                }
+        //         p {
+        //             width: 281px;
+        //             margin-inline: 49px;
+        //             font-size: 14px;
+        //             color: var(--lightText);
+        //             text-transform: uppercase;
+        //         }
 
-                p {
-                    width: 281px;
-                    margin-inline: 49px;
-                    font-size: 14px;
-                    color: var(--lightText);
-                    text-transform: uppercase;
-                }
+        //         a {
+        //             font-size: 16px;
+        //             margin-inline: 49px;
+        //             width: fit-content;
+        //             padding-bottom: 7px;
+        //             color: var(--mainColor);
+        //             text-transform: uppercase;
+        //             border-bottom: 2px solid var(--mainColor);
+        //             text-decoration: none;
+        //             width: fit-content;
+        //         }
 
-                a {
-                    font-size: 16px;
-                    margin-inline: 49px;
-                    width: fit-content;
-                    padding-bottom: 7px;
-                    color: var(--mainColor);
-                    text-transform: uppercase;
-                    border-bottom: 2px solid var(--mainColor);
-                    text-decoration: none;
-                    width: fit-content;
-                }
+        //         .first-child {
+        //             display: block;
+        //         }
 
-                .first-child {
-                    display: block;
-                }
+        //         .second-child {
+        //             display: block;
+        //             height: 100%;
+        //             width: ;
+        //         }
 
-                .second-child {
-                    display: block;
-                }
-            }
-        }
+
+        //     }
+        // }
     }
 }
