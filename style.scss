@@ -588,6 +588,7 @@ footer {
 
         #content-card-container {
             gap: 200px;
+            align-items: center;
 
             .content-card {
 
@@ -598,6 +599,8 @@ footer {
                 width: calc(100% - 2em);
                 aspect-ratio: 1.89;
                 margin: 0 1em;
+                max-width: 708px;
+
 
                 h3 {
                     font-size: 48px;
