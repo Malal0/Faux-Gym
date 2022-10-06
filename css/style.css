@@ -725,13 +725,10 @@ footer .copyright-line img {
         align-self: center;
     width: auto;
   }
-  .main-content #content-card-container .content-card:nth-child(even) {
-    background-color: #492828;
-  }
   .main-content #content-card-container .content-card:nth-child(even) > :first-child {
-    -ms-grid-column: 1;
+    -ms-grid-column: 2;
     -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
+    grid-column: 2 / 3;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
@@ -740,9 +737,9 @@ footer .copyright-line img {
         align-self: center;
   }
   .main-content #content-card-container .content-card:nth-child(even) > :nth-child(2) {
-    -ms-grid-column: 2;
+    -ms-grid-column: 1;
     -ms-grid-column-span: 1;
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     -ms-grid-row: 1;
     -ms-grid-row-span: 5;
     grid-row: 1 / 6;
@@ -751,9 +748,9 @@ footer .copyright-line img {
         align-self: center;
   }
   .main-content #content-card-container .content-card:nth-child(even) > :nth-child(3) {
-    -ms-grid-column: 1;
+    -ms-grid-column: 2;
     -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
+    grid-column: 2 / 3;
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
@@ -762,9 +759,9 @@ footer .copyright-line img {
         align-self: center;
   }
   .main-content #content-card-container .content-card:nth-child(even) > :last-child {
-    -ms-grid-column: 1;
+    -ms-grid-column: 2;
     -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
+    grid-column: 2 / 3;
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4 / 5;
@@ -773,6 +770,5 @@ footer .copyright-line img {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    width: auto;
   }
 }
