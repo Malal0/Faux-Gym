@@ -702,8 +702,8 @@ footer .copyright-line img {
   }
   .main-content #content-card-container .content-card > :last-child {
     -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
     -ms-grid-row: 4;
         grid-row-start: 4;
     grid-row-end: 4;
