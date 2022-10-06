@@ -594,7 +594,7 @@ footer {
 
                 background-color: var(--mainCardBg);
                 display: grid;
-                grid-template-columns: repeat(5, 1fr);
+                grid-template-columns: 1fr 2fr;
                 grid-template-rows: repeat(5, 1fr);
                 width: calc(100% - 2em);
                 aspect-ratio: 1.89;
@@ -613,7 +613,7 @@ footer {
                 }
 
                 p {
-                    width: 281px;
+                    // width: 281px;
                     margin-inline: 49px;
                     font-size: 14px;
                 }
@@ -626,32 +626,33 @@ footer {
                 }
 
                 &>:first-child {
-                    grid-column-start: 1;
-                    grid-column-end: 2;
-                    grid-row-start: 2;
-                    grid-row-end: 2;
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 3;
+                    align-self: center;
                 }
 
                 &>:nth-child(2) {
-                    grid-column-start: 2;
-                    grid-column-end: 6;
-                    grid-row-start: 1;
-                    grid-row-end: 6;
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 6;
+                    align-self: center;
                 }
 
                 &>:nth-child(3) {
-                    grid-column-start: 1;
-                    grid-column-end: 2;
-                    grid-row-start: 3;
-                    grid-row-end: 3;
+                    grid-column: 1 / 2;
+                    grid-row: 3 / 4;
+                    align-self: center;
                 }
 
                 &>:last-child {
                     grid-column: 1 / 2;
                     // grid-column-start: 1;
                     // grid-column-end: 2;
-                    grid-row-start: 4;
-                    grid-row-end: 4;
+                    grid-row: 4 / 5;
+                    // grid-row-start: 4;
+                    // grid-row-end: 4;
+                    justify-self: start;
+                    align-self: center;
+                    width: auto;
                 }
             }
         }

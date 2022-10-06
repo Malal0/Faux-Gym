@@ -646,8 +646,8 @@ footer .copyright-line img {
     background-color: var(--mainCardBg);
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[5];
-        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
     width: calc(100% - 2em);
@@ -664,7 +664,6 @@ footer .copyright-line img {
     height: 100%;
   }
   .main-content #content-card-container .content-card p {
-    width: 281px;
     margin-inline: 49px;
     font-size: 14px;
   }
@@ -678,34 +677,49 @@ footer .copyright-line img {
   }
   .main-content #content-card-container .content-card > :first-child {
     -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
     -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .main-content #content-card-container .content-card > :nth-child(2) {
     -ms-grid-column: 2;
-        grid-column-start: 2;
-    grid-column-end: 6;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
     -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 6;
+    -ms-grid-row-span: 5;
+    grid-row: 1 / 6;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .main-content #content-card-container .content-card > :nth-child(3) {
     -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
     -ms-grid-row: 3;
-        grid-row-start: 3;
-    grid-row-end: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .main-content #content-card-container .content-card > :last-child {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
     -ms-grid-row: 4;
-        grid-row-start: 4;
-    grid-row-end: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: auto;
   }
 }
