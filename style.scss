@@ -720,8 +720,8 @@ footer {
 
         h2 {
             font-size: 45px;
-            margin: 45px auto;
-            width: 287px;
+            margin: 8% auto;
+            width: fit-content;
         }
 
         #content-card-container {
@@ -738,7 +738,8 @@ footer {
                 width: 74%;
                 max-width: 1064px;
                 aspect-ratio: 1.89;
-                margin: 0 1em;
+                max-height: 564px;
+                margin: 0 auto;
 
 
                 h3 {

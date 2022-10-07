@@ -801,8 +801,10 @@ footer .copyright-line img {
   }
   .main-content h2 {
     font-size: 45px;
-    margin: 45px auto;
-    width: 287px;
+    margin: 8% auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .main-content #content-card-container {
     gap: 200px;
@@ -822,7 +824,8 @@ footer .copyright-line img {
     width: 74%;
     max-width: 1064px;
     aspect-ratio: 1.89;
-    margin: 0 1em;
+    max-height: 564px;
+    margin: 0 auto;
   }
   .main-content #content-card-container .content-card h3 {
     font-size: 48px;
