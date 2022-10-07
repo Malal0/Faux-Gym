@@ -819,6 +819,8 @@ footer .copyright-line img {
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
     gap: 1rem;
+    width: 74%;
+    max-width: 1064px;
     aspect-ratio: 1.89;
     margin: 0 1em;
   }
