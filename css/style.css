@@ -644,8 +644,8 @@ footer .copyright-line img {
     background-color: var(--mainCardBg);
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 47% 53%;
+        grid-template-columns: 47% 53%;
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
     gap: 1rem;
@@ -722,6 +722,10 @@ footer .copyright-line img {
         -ms-grid-row-align: center;
         align-self: center;
     width: auto;
+  }
+  .main-content #content-card-container .content-card:nth-child(even) {
+    -ms-grid-columns: 53% 47%;
+        grid-template-columns: 53% 47%;
   }
   .main-content #content-card-container .content-card:nth-child(even) > :first-child {
     -ms-grid-column: 2;
@@ -816,8 +820,6 @@ footer .copyright-line img {
     background-color: var(--mainCardBg);
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (1fr)[5];
         grid-template-rows: repeat(5, 1fr);
     gap: 1rem;

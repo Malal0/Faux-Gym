@@ -592,7 +592,7 @@ footer {
 
                 background-color: var(--mainCardBg);
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 47% 53%;
                 grid-template-rows: repeat(5, 1fr);
                 gap: 1rem;
                 width: calc(100% - 2em);
@@ -656,6 +656,8 @@ footer {
                 }
 
                 &:nth-child(even) {
+                    grid-template-columns: 53% 47%;
+
                     &>:first-child {
                         grid-column: 2 / 3;
                         grid-row: 2 / 3;
@@ -732,7 +734,7 @@ footer {
 
                 background-color: var(--mainCardBg);
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                // grid-template-columns: 47% 53%;
                 grid-template-rows: repeat(5, 1fr);
                 gap: 1rem;
                 width: 74%;
@@ -797,6 +799,8 @@ footer {
                 }
 
                 &:nth-child(even) {
+                    // grid-template-columns: 53% 47%;
+
                     &>:first-child {
                         grid-column: 2 / 3;
                         grid-row: 2 / 3;
