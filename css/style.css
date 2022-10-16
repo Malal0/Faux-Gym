@@ -234,7 +234,7 @@ img {
 }
 
 #plans #payment-plan-container {
-  width: calc(100% - 32px);
+  width: calc(100% - 2em);
   height: 600px;
   margin: 1em;
   display: -webkit-box;
@@ -263,7 +263,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2.25em;
+  gap: 2.8125em;
   margin-bottom: 36px;
   font-weight: 300;
 }
@@ -291,9 +291,10 @@ img {
 }
 
 #plans .payment-plan .plan-minicontainer {
-  width: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: 22px 0;
-  gap: 1em;
 }
 
 #plans .payment-plan .plan-minicontainer.first {
