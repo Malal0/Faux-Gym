@@ -249,6 +249,10 @@ img {
           flex-flow: column;
 }
 
+#plans #payment-plan-container > :nth-child(even) {
+  background-color: red;
+}
+
 #plans .payment-plan {
   background-color: var(--secondaryCardBg);
   color: var(--darkText);

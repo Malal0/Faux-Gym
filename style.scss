@@ -227,6 +227,10 @@ img {
         display: flex;
         justify-content: space-between;
         flex-flow: column;
+
+        &>:nth-child(even) {
+            background-color: red;
+        }
     }
 
     .payment-plan {
@@ -266,7 +270,7 @@ img {
         .plan-minicontainer {
             width: fit-content;
             margin: 22px 0;
-            // gap: 2.8125em;
+            // gap: .5em;
 
             &.first {
                 text-align: end;
