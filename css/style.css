@@ -225,7 +225,7 @@ img {
   height: fit-content;
 }
 
-#plans h3 {
+h3 {
   font-size: 32px;
   text-transform: uppercase;
   text-align: center;
@@ -233,7 +233,7 @@ img {
   color: var(--darkText);
 }
 
-#plans #payment-plan-container {
+#payment-plan-container {
   width: calc(100% - 2em);
   height: 600px;
   margin: 1em;
@@ -249,14 +249,7 @@ img {
           flex-flow: column;
 }
 
-#plans #payment-plan-container > :nth-child(even) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-#plans .payment-plan {
+#payment-plan-container .payment-plan {
   background-color: var(--secondaryCardBg);
   color: var(--darkText);
   width: 100%;
@@ -275,46 +268,61 @@ img {
   font-weight: 300;
 }
 
-#plans .payment-plan h4 {
+#payment-plan-container .payment-plan h4 {
   font-size: 36px;
 }
 
-#plans .payment-plan h5 {
+#payment-plan-container .payment-plan h5 {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 300;
 }
 
-#plans .payment-plan p {
+#payment-plan-container .payment-plan p {
   font-size: 10px;
   width: 80%;
 }
 
-#plans .payment-plan a {
+#payment-plan-container .payment-plan a {
   font-size: 14px;
   color: var(--mainColor);
   text-decoration: none;
   text-transform: uppercase;
 }
 
-#plans .payment-plan .plan-minicontainer {
+#payment-plan-container .payment-plan .plan-minicontainer {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 22px 0;
 }
 
-#plans .payment-plan .plan-minicontainer.first {
+#payment-plan-container .payment-plan .plan-minicontainer.first {
   text-align: end;
 }
 
-#plans .payment-plan .plan-minicontainer.second {
+#payment-plan-container .payment-plan .plan-minicontainer.second {
   text-align: start;
 }
 
-#plans .payment-plan .plan-minicontainer p {
+#payment-plan-container .payment-plan .plan-minicontainer p {
   width: 100px;
   text-transform: uppercase;
+}
+
+#payment-plan-container > :nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#payment-plan-container > :nth-child(even) .plan-minicontainer.first {
+  text-align: start;
+}
+
+#payment-plan-container > :nth-child(even) .plan-minicontainer.second {
+  text-align: end;
 }
 
 footer {
