@@ -250,7 +250,10 @@ img {
 }
 
 #plans #payment-plan-container > :nth-child(even) {
-  background-color: red;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 #plans .payment-plan {
