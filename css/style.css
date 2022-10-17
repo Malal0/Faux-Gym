@@ -617,6 +617,89 @@ footer .copyright-line img {
     width: fit-content;
     padding-bottom: 7px;
   }
+  #plans h3 {
+    font-size: 32px;
+    text-align: center;
+    margin: 62px 0;
+  }
+  #plans #payment-plan-container {
+    width: calc(100% - 2em);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  #plans #payment-plan-container .payment-plan {
+    background-color: var(--secondaryCardBg);
+    color: var(--darkText);
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    font-weight: 300;
+  }
+  #plans #payment-plan-container .payment-plan h4 {
+    font-size: 36px;
+  }
+  #plans #payment-plan-container .payment-plan h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  #plans #payment-plan-container .payment-plan p {
+    font-size: 10px;
+    width: 80%;
+  }
+  #plans #payment-plan-container .payment-plan a {
+    font-size: 14px;
+    color: var(--mainColor);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  #plans #payment-plan-container .payment-plan .plan-minicontainer {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+  }
+  #plans #payment-plan-container .payment-plan .plan-minicontainer.first {
+    text-align: center;
+  }
+  #plans #payment-plan-container .payment-plan .plan-minicontainer.second {
+    text-align: center;
+  }
+  #plans #payment-plan-container .payment-plan .plan-minicontainer p {
+    width: 100px;
+    text-transform: uppercase;
+  }
+  #plans #payment-plan-container > :nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #plans #payment-plan-container > :nth-child(even) .plan-minicontainer.first {
+    text-align: center;
+  }
+  #plans #payment-plan-container > :nth-child(even) .plan-minicontainer.second {
+    text-align: center;
+  }
 }
 
 @media (min-width: 760px) {
