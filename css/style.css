@@ -252,8 +252,8 @@ img {
   font-weight: 300;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 }
@@ -262,8 +262,8 @@ img {
   font-size: 36px;
   -ms-grid-column: 1;
   grid-column: 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
 #plans #payment-plan-container .payment-plan h5 {
@@ -272,8 +272,8 @@ img {
   font-weight: 300;
   -ms-grid-column: 1;
   grid-column: 1;
-  -ms-grid-row: 2;
-  grid-row: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
 }
 
 #plans #payment-plan-container .payment-plan p {
@@ -281,8 +281,9 @@ img {
   width: 80%;
   -ms-grid-column: 2;
   grid-column: 2;
-  -ms-grid-row: 1;
-  grid-row: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  text-align: center;
 }
 
 #plans #payment-plan-container .payment-plan a {
@@ -292,15 +293,41 @@ img {
   text-transform: uppercase;
   -ms-grid-column: 2;
   grid-column: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+#plans #payment-plan-container > * {
+  place-items: center;
+}
+
+#plans #payment-plan-container > :nth-child(even) h4 {
+  -ms-grid-column: 2;
+  grid-column: 2;
   -ms-grid-row: 2;
   grid-row: 2;
 }
 
-#plans #payment-plan-container > :nth-child(even) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+#plans #payment-plan-container > :nth-child(even) h5 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+#plans #payment-plan-container > :nth-child(even) p {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  text-align: center;
+}
+
+#plans #payment-plan-container > :nth-child(even) a {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
 }
 
 footer {
@@ -641,6 +668,8 @@ footer .copyright-line img {
         -ms-flex-flow: column;
             flex-flow: column;
     font-weight: 300;
+    gap: 12px;
+    padding: 12px;
   }
   #plans #payment-plan-container .payment-plan h4 {
     font-size: 36px;
@@ -659,34 +688,6 @@ footer .copyright-line img {
     color: var(--mainColor);
     text-decoration: none;
     text-transform: uppercase;
-  }
-  #plans #payment-plan-container .payment-plan .plan-minicontainer {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 0;
-  }
-  #plans #payment-plan-container .payment-plan .plan-minicontainer.first {
-    text-align: center;
-  }
-  #plans #payment-plan-container .payment-plan .plan-minicontainer.second {
-    text-align: center;
-  }
-  #plans #payment-plan-container .payment-plan .plan-minicontainer p {
-    width: 100px;
-    text-transform: uppercase;
-  }
-  #plans #payment-plan-container > :nth-child(even) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #plans #payment-plan-container > :nth-child(even) .plan-minicontainer.first {
-    text-align: center;
-  }
-  #plans #payment-plan-container > :nth-child(even) .plan-minicontainer.second {
-    text-align: center;
   }
 }
 
