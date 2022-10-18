@@ -654,6 +654,8 @@ footer .copyright-line img {
     color: var(--darkText);
     width: 100%;
     height: 100%;
+    font-weight: 300;
+    padding-block: 2em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -667,9 +669,7 @@ footer .copyright-line img {
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    font-weight: 300;
     gap: 12px;
-    padding: 12px;
   }
   #plans #payment-plan-container .payment-plan h4 {
     font-size: 36px;
