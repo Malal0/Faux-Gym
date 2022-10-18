@@ -573,31 +573,24 @@ footer {
             width: calc(100% - 2em);
             height: fit-content;
             margin: 0 auto;
-            // display: flex;
-            // justify-content: space-evenly;
-            // align-items: center;
-            // flex-flow: row;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
             //  code for grid children
 
-            // &>:first-child {
-            //     border: 2px solid red;
-            //     grid-column: 1;
-            // }
+            &>:first-child {
+                grid-column: 1;
+            }
 
-            // &>:nth-child(2) {
-            //     border: 2px solid red;
-            //     grid-column: 2;
-            // }
+            &>:nth-child(2) {
+                grid-column: 2;
+            }
 
-            // &>:last-child {
-            //     border: 2px solid red;
-            //     grid-column: 3;
-            // }
+            &>:last-child {
+                grid-column: 3;
+            }
 
             //code for grid children
-            gap: 0;
 
             .payment-plan {
                 background-color: var(--secondaryCardBg);

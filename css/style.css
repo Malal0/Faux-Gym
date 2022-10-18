@@ -632,7 +632,19 @@ footer .copyright-line img {
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+    gap: 30px;
+  }
+  #plans #payment-plan-container > :first-child {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  #plans #payment-plan-container > :nth-child(2) {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  #plans #payment-plan-container > :last-child {
+    -ms-grid-column: 3;
+    grid-column: 3;
   }
   #plans #payment-plan-container .payment-plan {
     background-color: var(--secondaryCardBg);
