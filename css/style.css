@@ -882,41 +882,6 @@ footer .copyright-line img {
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  #plans #payment-plan-container .payment-plan h4 {
-    font-size: 36px;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 2;
-    grid-row: 2;
-  }
-  #plans #payment-plan-container .payment-plan h5 {
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 300;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 3;
-    grid-row: 3;
-  }
-  #plans #payment-plan-container .payment-plan p {
-    font-size: 10px;
-    width: 80%;
-    -ms-grid-column: 2;
-    grid-column: 2;
-    -ms-grid-row: 2;
-    grid-row: 2;
-    text-align: center;
-  }
-  #plans #payment-plan-container .payment-plan a {
-    font-size: 14px;
-    color: var(--mainColor);
-    text-decoration: none;
-    text-transform: uppercase;
-    -ms-grid-column: 2;
-    grid-column: 2;
-    -ms-grid-row: 3;
-    grid-row: 3;
-  }
 }
 
 @media (min-width: 1020px) {
