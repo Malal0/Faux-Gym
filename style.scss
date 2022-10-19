@@ -826,35 +826,6 @@ footer {
                     grid-row: 3;
                 }
             }
-
-            &>* {
-                place-items: center;
-            }
-
-            &>:nth-child(even) {
-
-                h4 {
-                    grid-column: 2;
-                    grid-row: 2;
-                }
-
-                h5 {
-                    grid-column: 2;
-                    grid-row: 3;
-                }
-
-                p {
-                    grid-column: 1;
-                    grid-row: 2;
-                    text-align: center;
-                }
-
-                a {
-                    grid-column: 1;
-                    grid-row: 3;
-                }
-
-            }
         }
     }
 }
