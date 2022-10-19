@@ -651,7 +651,6 @@ footer .copyright-line img {
   }
   #plans #payment-plan-container .payment-plan h5 {
     font-size: 24px;
-    text-transform: uppercase;
     font-weight: 300;
   }
   #plans #payment-plan-container .payment-plan p {
@@ -660,9 +659,6 @@ footer .copyright-line img {
   }
   #plans #payment-plan-container .payment-plan a {
     font-size: 20px;
-    color: var(--mainColor);
-    text-decoration: none;
-    text-transform: uppercase;
   }
 }
 
@@ -881,6 +877,20 @@ footer .copyright-line img {
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
+  }
+  #plans #payment-plan-container .payment-plan h4 {
+    font-size: 45px;
+  }
+  #plans #payment-plan-container .payment-plan h5 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  #plans #payment-plan-container .payment-plan p {
+    font-size: 14px;
+    width: 80%;
+  }
+  #plans #payment-plan-container .payment-plan a {
+    font-size: 20px;
   }
 }
 
