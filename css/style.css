@@ -1065,7 +1065,7 @@ footer .copyright-line img {
   }
   #plans h3 {
     font-size: 64px;
-    margin: 62px 0;
+    margin: 1em 0;
   }
   #plans #payment-plan-container {
     width: clamp(70vw, 100%, 1067px);
