@@ -223,6 +223,7 @@ img {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding-bottom: 100px;
 }
 
 #plans h3 {
@@ -333,7 +334,7 @@ img {
 footer {
   background-color: var(--mainColor);
   color: var(--lightText);
-  padding: 2.5em 0;
+  padding: 2.5em 1em;
 }
 
 footer .footer-links-block-container {

@@ -211,6 +211,7 @@ img {
 
 #plans {
     height: fit-content;
+    padding-bottom: 100px;
 
     h3 {
         font-size: 32px;
@@ -304,7 +305,7 @@ img {
 footer {
     background-color: var(--mainColor);
     color: var(--lightText);
-    padding: 2.5em 0;
+    padding: 2.5em 1em;
 
     .footer-links-block-container {
         display: flex;
