@@ -862,7 +862,7 @@ footer .copyright-line img {
     background-color: var(--secondaryCardBg);
     color: var(--darkText);
     width: 100%;
-    height: 100%;
+    aspect-ratio: .66;
     font-weight: 300;
     display: -webkit-box;
     display: -ms-flexbox;
