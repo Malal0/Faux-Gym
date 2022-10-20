@@ -893,6 +893,9 @@ footer .copyright-line img {
   #plans #payment-plan-container .payment-plan a {
     font-size: 20px;
   }
+  footer {
+    padding: 2.5em 4em;
+  }
 }
 
 @media (min-width: 1020px) {
@@ -1107,5 +1110,8 @@ footer .copyright-line img {
   }
   #plans #payment-plan-container .payment-plan a {
     font-size: 32px;
+  }
+  footer {
+    padding: 2.5em 10em;
   }
 }
