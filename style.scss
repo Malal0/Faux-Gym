@@ -963,40 +963,24 @@ footer {
         }
 
         #payment-plan-container {
-            width: calc(100% - 2em);
+            width: clamp(70vw, 100%, 1067px);
             height: 600px;
             margin: 0 auto;
             gap: 36px;
-            grid-template-columns: repeat(3, 1fr);
-
-            //code for grid children
-            &>:first-child {
-                grid-column: 1;
-            }
-
-            &>:nth-child(2) {
-                grid-column: 2;
-            }
-
-            &>:last-child {
-                grid-column: 3;
-            }
-
-            //code for grid children
 
             .payment-plan {
                 background-color: var(--secondaryCardBg);
                 color: var(--darkText);
-                width: 100%;
                 aspect-ratio: .66;
                 font-weight: 300;
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
                 flex-flow: column;
+                gap: 2em;
 
                 h4 {
-                    font-size: 96px;
+                    font-size: 72px;
                 }
 
                 h5 {
