@@ -68,8 +68,8 @@ img {
 
     img {
         height: 20px;
-        object-fit: cover;
-        width: fit-content;
+        object-fit: contain;
+        width: auto;
     }
 }
 
@@ -761,10 +761,10 @@ footer {
 
         #payment-plan-container {
             width: calc(100% - 2em);
-            height: 600px;
             margin: 0 auto;
             gap: 36px;
             grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
 
             //code for grid children
             &>:first-child {
@@ -851,7 +851,7 @@ footer {
         width: 100%;
 
         h2 {
-            font-size: 45px;
+            font-size: 64px;
             margin: 8% auto;
             width: fit-content;
         }
