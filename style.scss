@@ -1007,5 +1007,24 @@ footer {
 
     footer {
         padding: 2.5em 10em;
+
+        .footer-social-links {
+            display: flex;
+            justify-content: space-between;
+            padding-block: 2em;
+            width: 80%;
+            margin: auto;
+
+            a {
+                :hover {
+                    scale: 1.1;
+                }
+            }
+
+            img {
+                height: 1.5em;
+                width: 1.5em;
+            }
+        }
     }
 }

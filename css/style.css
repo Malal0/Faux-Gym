@@ -1114,4 +1114,22 @@ footer .copyright-line img {
   footer {
     padding: 2.5em 10em;
   }
+  footer .footer-social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-block: 2em;
+    width: 80%;
+    margin: auto;
+  }
+  footer .footer-social-links a :hover {
+    scale: 1.1;
+  }
+  footer .footer-social-links img {
+    height: 1.5em;
+    width: 1.5em;
+  }
 }
