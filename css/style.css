@@ -925,6 +925,9 @@ footer .copyright-line img {
     font-size: 72.21px;
     padding: 0 40px;
   }
+  #hero-section nav #nav-links {
+    border: 1px solid red;
+  }
   .main-content {
     width: 100%;
   }

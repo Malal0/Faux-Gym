@@ -849,6 +849,12 @@ footer {
             font-size: 72.21px;
             padding: 0 40px;
         }
+
+        nav {
+            #nav-links {
+                border: 1px solid red;
+            }
+        }
     }
 
     .main-content {
