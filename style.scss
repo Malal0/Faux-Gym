@@ -851,9 +851,28 @@ footer {
         }
 
         nav {
-            #nav-links {
-                border: 1px solid red;
+            #nav-bar {
+                #nav-links {
+                    ul {
+                        // border: 1px solid red;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 516px;
+
+                        li {
+                            list-style-type: none;
+                        }
+                    }
+
+                    a {
+                        color: var(--lightText);
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-size: 18px;
+                    }
+                }
             }
+
         }
     }
 

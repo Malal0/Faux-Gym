@@ -925,8 +925,23 @@ footer .copyright-line img {
     font-size: 72.21px;
     padding: 0 40px;
   }
-  #hero-section nav #nav-links {
-    border: 1px solid red;
+  #hero-section nav #nav-bar #nav-links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 516px;
+  }
+  #hero-section nav #nav-bar #nav-links ul li {
+    list-style-type: none;
+  }
+  #hero-section nav #nav-bar #nav-links a {
+    color: var(--lightText);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
   }
   .main-content {
     width: 100%;
