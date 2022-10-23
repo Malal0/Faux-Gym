@@ -857,7 +857,7 @@ footer {
                         // border: 1px solid red;
                         display: flex;
                         justify-content: space-between;
-                        width: 516px;
+                        width: clamp(516px, 40vw, 1000px);
 
                         li {
                             list-style-type: none;
