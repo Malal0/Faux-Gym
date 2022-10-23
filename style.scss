@@ -869,6 +869,12 @@ footer {
                         text-transform: uppercase;
                         text-decoration: none;
                         font-size: 18px;
+                        padding-bottom: 5px;
+
+                        &:hover {
+                            color: var(--mainColor);
+                            border-bottom: 1px solid var(--mainColor);
+                        }
                     }
                 }
             }

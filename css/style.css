@@ -942,6 +942,11 @@ footer .copyright-line img {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 18px;
+    padding-bottom: 5px;
+  }
+  #hero-section nav #nav-bar #nav-links a:hover {
+    color: var(--mainColor);
+    border-bottom: 1px solid var(--mainColor);
   }
   .main-content {
     width: 100%;
