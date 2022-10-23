@@ -876,6 +876,11 @@ footer {
                             border-bottom: 1px solid var(--mainColor);
                         }
                     }
+
+                    .current {
+                        color: var(--mainColor);
+                        font-weight: 700;
+                    }
                 }
             }
 

@@ -948,6 +948,10 @@ footer .copyright-line img {
     color: var(--mainColor);
     border-bottom: 1px solid var(--mainColor);
   }
+  #hero-section nav #nav-bar #nav-links .current {
+    color: var(--mainColor);
+    font-weight: 700;
+  }
   .main-content {
     width: 100%;
   }
