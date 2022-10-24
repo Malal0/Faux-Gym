@@ -852,9 +852,11 @@ footer {
 
         nav {
             #nav-bar {
+                width: clamp(1000px, 70%, 90%);
+                margin: auto;
+
                 #nav-links {
                     ul {
-                        // border: 1px solid red;
                         display: flex;
                         justify-content: space-between;
                         width: clamp(516px, 40vw, 1000px);
@@ -881,6 +883,11 @@ footer {
                         color: var(--mainColor);
                         font-weight: 700;
                     }
+                }
+
+                .icon-container {
+                    display: flex;
+                    gap: 1.5em;
                 }
             }
 

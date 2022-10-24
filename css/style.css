@@ -925,6 +925,10 @@ footer .copyright-line img {
     font-size: 72.21px;
     padding: 0 40px;
   }
+  #hero-section nav #nav-bar {
+    width: clamp(1000px, 70%, 90%);
+    margin: auto;
+  }
   #hero-section nav #nav-bar #nav-links ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -951,6 +955,12 @@ footer .copyright-line img {
   #hero-section nav #nav-bar #nav-links .current {
     color: var(--mainColor);
     font-weight: 700;
+  }
+  #hero-section nav #nav-bar .icon-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5em;
   }
   .main-content {
     width: 100%;
