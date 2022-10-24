@@ -888,6 +888,12 @@ footer {
                 .icon-container {
                     display: flex;
                     gap: 1.5em;
+
+                    #searchBar {
+                        textarea {
+                            background-color: yellowgreen;
+                        }
+                    }
                 }
             }
 

@@ -962,6 +962,9 @@ footer .copyright-line img {
     display: flex;
     gap: 1.5em;
   }
+  #hero-section nav #nav-bar .icon-container #searchBar textarea {
+    background-color: yellowgreen;
+  }
   .main-content {
     width: 100%;
   }
