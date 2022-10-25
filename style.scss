@@ -890,7 +890,7 @@ footer {
                     align-items: baseline;
                     gap: 1.5em;
 
-                    .search-closed {
+                    .search-bar {
                         height: 100%;
                         width: fit-content;
                         display: grid;
@@ -900,34 +900,39 @@ footer {
                         :nth-child(3) {
                             display: none;
                         }
-                    }
 
-                    .search-open {
-                        height: 100%;
-                        width: fit-content;
-                        display: grid;
-                        grid-template-columns: 1fr 145px 1fr;
-                        gap: 4px;
-                        border-radius: 4px;
-                        padding: .5625em .6em;
-                        background-color: #464646;
-
-                        input {
+                        &:focus-within {
                             height: 100%;
-                            width: 100%;
-                            background-color: #00000000;
-                            font-size: 1em;
-                            color: #e1e1e1;
-                            border: none;
-                            outline: none;
-                        }
+                            width: fit-content;
+                            display: grid;
+                            grid-template-columns: 1fr 145px 1fr;
+                            gap: 4px;
+                            border-radius: 4px;
+                            padding: .5625em .6em;
+                            background-color: #464646;
 
-                        #delete-btn {
-                            height: .8em;
-                        }
+                            input {
+                                height: 100%;
+                                width: 100%;
+                                background-color: #00000000;
+                                font-size: 1em;
+                                color: #e1e1e1;
+                                border: none;
+                                outline: none;
+                            }
 
-                        &>* {
-                            place-self: center;
+                            #delete-btn {
+                                height: .8em;
+                            }
+
+                            &>* {
+                                place-self: center;
+                            }
+
+                            :nth-child(2),
+                            :nth-child(3) {
+                                display: inline;
+                            }
                         }
                     }
                 }
