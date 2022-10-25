@@ -904,6 +904,7 @@ footer .copyright-line img {
   #hero-section {
     background-image: url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     height: 80vh;
+    background-position: 0 20%;
   }
   #hero-section #cta-container {
     background-color: rgba(0, 0, 0, 0.62);
@@ -1014,7 +1015,7 @@ footer .copyright-line img {
     display: grid;
     -ms-grid-columns: 1fr 145px 1fr;
         grid-template-columns: 1fr 145px 1fr;
-    gap: 4px;
+    gap: 6px;
     border-radius: 4px;
     padding: .5625em .6em;
     background-color: #464646;
