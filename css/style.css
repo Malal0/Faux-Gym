@@ -960,10 +960,31 @@ footer .copyright-line img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     gap: 1.5em;
   }
-  #hero-section nav #nav-bar .icon-container #searchBar textarea {
-    background-color: yellowgreen;
+  #hero-section nav #nav-bar .icon-container #searchBar {
+    background-color: #464646;
+    height: 100%;
+    width: 183px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 4fr 1fr;
+        grid-template-columns: 1fr 4fr 1fr;
+    padding: .5625em .875em;
+  }
+  #hero-section nav #nav-bar .icon-container #searchBar > * {
+    place-self: center;
+  }
+  #hero-section nav #nav-bar .icon-container #searchBar input {
+    height: 100%;
+    width: 100%;
+    background-color: #00000000;
+    font-size: 1em;
+    color: #e1e1e1;
+    resize: none;
   }
   .main-content {
     width: 100%;

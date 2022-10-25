@@ -887,11 +887,28 @@ footer {
 
                 .icon-container {
                     display: flex;
+                    align-items: baseline;
                     gap: 1.5em;
 
                     #searchBar {
-                        textarea {
-                            background-color: yellowgreen;
+                        background-color: #464646;
+                        height: 100%;
+                        width: 183px;
+                        display: grid;
+                        grid-template-columns: 1fr 4fr 1fr;
+                        padding: .5625em .875em;
+
+                        &>* {
+                            place-self: center;
+                        }
+
+                        input {
+                            height: 100%;
+                            width: 100%;
+                            background-color: #00000000;
+                            font-size: 1em;
+                            color: #e1e1e1;
+                            resize: none;
                         }
                     }
                 }
