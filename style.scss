@@ -890,19 +890,27 @@ footer {
                     align-items: baseline;
                     gap: 1.5em;
 
-                    #searchBar {
-                        background-color: #464646;
+                    .search-closed {
                         height: 100%;
                         width: fit-content;
-                        padding: .5625em .6em;
-                        border-radius: 4px;
+                        display: grid;
+                        grid-template-columns: 1;
+
+                        :nth-child(2),
+                        :nth-child(3) {
+                            display: none;
+                        }
+                    }
+
+                    .search-open {
+                        height: 100%;
+                        width: fit-content;
                         display: grid;
                         grid-template-columns: 1fr 145px 1fr;
                         gap: 4px;
-
-                        &>* {
-                            place-self: center;
-                        }
+                        border-radius: 4px;
+                        padding: .5625em .6em;
+                        background-color: #464646;
 
                         input {
                             height: 100%;
@@ -916,6 +924,10 @@ footer {
 
                         #delete-btn {
                             height: .8em;
+                        }
+
+                        &>* {
+                            place-self: center;
                         }
                     }
                 }
