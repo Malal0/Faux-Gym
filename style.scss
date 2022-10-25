@@ -893,10 +893,12 @@ footer {
                     #searchBar {
                         background-color: #464646;
                         height: 100%;
-                        width: 183px;
+                        width: fit-content;
+                        padding: .5625em .6em;
+                        border-radius: 4px;
                         display: grid;
-                        grid-template-columns: 1fr 3fr 1fr;
-                        padding: .5625em .875em;
+                        grid-template-columns: 1fr 145px 1fr;
+                        gap: 4px;
 
                         &>* {
                             place-self: center;
@@ -908,6 +910,8 @@ footer {
                             background-color: #00000000;
                             font-size: 1em;
                             color: #e1e1e1;
+                            border: none;
+                            outline: none;
                         }
 
                         #delete-btn {

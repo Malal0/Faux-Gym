@@ -968,12 +968,16 @@ footer .copyright-line img {
   #hero-section nav #nav-bar .icon-container #searchBar {
     background-color: #464646;
     height: 100%;
-    width: 183px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: .5625em .6em;
+    border-radius: 4px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 3fr 1fr;
-        grid-template-columns: 1fr 3fr 1fr;
-    padding: .5625em .875em;
+    -ms-grid-columns: 1fr 145px 1fr;
+        grid-template-columns: 1fr 145px 1fr;
+    gap: 4px;
   }
   #hero-section nav #nav-bar .icon-container #searchBar > * {
     place-self: center;
@@ -984,6 +988,8 @@ footer .copyright-line img {
     background-color: #00000000;
     font-size: 1em;
     color: #e1e1e1;
+    border: none;
+    outline: none;
   }
   #hero-section nav #nav-bar .icon-container #searchBar #delete-btn {
     height: .8em;
