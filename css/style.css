@@ -971,8 +971,8 @@ footer .copyright-line img {
     width: 183px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 4fr 1fr;
-        grid-template-columns: 1fr 4fr 1fr;
+    -ms-grid-columns: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
     padding: .5625em .875em;
   }
   #hero-section nav #nav-bar .icon-container #searchBar > * {
@@ -984,7 +984,9 @@ footer .copyright-line img {
     background-color: #00000000;
     font-size: 1em;
     color: #e1e1e1;
-    resize: none;
+  }
+  #hero-section nav #nav-bar .icon-container #searchBar #delete-btn {
+    height: .8em;
   }
   .main-content {
     width: 100%;

@@ -895,7 +895,7 @@ footer {
                         height: 100%;
                         width: 183px;
                         display: grid;
-                        grid-template-columns: 1fr 4fr 1fr;
+                        grid-template-columns: 1fr 3fr 1fr;
                         padding: .5625em .875em;
 
                         &>* {
@@ -908,7 +908,10 @@ footer {
                             background-color: #00000000;
                             font-size: 1em;
                             color: #e1e1e1;
-                            resize: none;
+                        }
+
+                        #delete-btn {
+                            height: .8em;
                         }
                     }
                 }
