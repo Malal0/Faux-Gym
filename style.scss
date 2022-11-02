@@ -39,6 +39,11 @@
     padding: 0;
 }
 
+*:focus {
+    outline: 1px solid var(--lightText);
+    border: 1px solid var(--mainColor);
+}
+
 body {
     background-color: var(--mainBg);
     min-width: 270px;
@@ -150,6 +155,11 @@ img {
     color: #ffffff;
     position: relative;
 
+    *:focus {
+        border: 1px solid var(--lightText);
+        outline: 1px solid var(--mainColor);
+    }
+
     #linearGrad {
         background-image: linear-gradient(180deg, black, rgba(255, 255, 255, 0));
         height: 100%;
@@ -197,6 +207,11 @@ img {
         &:active {
             scale: .999;
             filter: brightness(.9)
+        }
+
+        &:focus {
+            border: 1px solid var(--lightText);
+            outline: 1px solid var(--mainColor);
         }
     }
 }
@@ -374,6 +389,10 @@ footer {
     background-color: var(--mainColor);
     color: var(--lightText);
     padding: 2.5em 1em;
+
+    *:focus {
+        border: 1px solid var(--lightText);
+    }
 
     .footer-links-block-container {
         display: flex;
