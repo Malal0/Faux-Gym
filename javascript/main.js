@@ -2,9 +2,9 @@ const body = document.querySelector('body');
 const pref = window.matchMedia('(prefers-color-scheme: dark)');
 console.log(pref); // TRUE if user prefers dark mode
 const toggleColorPref = document.getElementById('hero-btn');
-const searchBtn = document.getElementById('search-btn');
-const deleteBtn = document.getElementById('delete-btn');
-const searchInput = document.getElementById('searchInput');
+const searchBtnL = document.getElementById('search-btn-L');
+const searchInputL = document.getElementById('searchInput-L');
+const deleteBtnL = document.getElementById('delete-btn-L');
 const menuBtn = document.getElementById('menu-btn');
 const navEl = document.querySelector('nav');
 const ctaContainer = document.getElementById('cta-container');
