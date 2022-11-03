@@ -34,11 +34,20 @@ toggleColorPref.addEventListener('click', () => {
 //     // body.classList.toggle('full-screen');
 // })
 
-searchBtn.addEventListener('click', () => {
-    searchInput.focus();
+searchBtnL.addEventListener('click', () => {
+    searchInputL.focus();
 });
 
-deleteBtn.addEventListener('click', () => {
-    searchInput.value = '';
-    searchInput.focus();
+deleteBtnL.addEventListener('click', () => {
+    searchInputL.value = '';
+    searchInputL.focus();
+});
+
+searchBtnS.addEventListener('click', () => {
+    searchInputS.focus();
+});
+
+deleteBtnS.addEventListener('click', () => {
+    searchInputS.value = '';
+    searchInputS.focus();
 });
