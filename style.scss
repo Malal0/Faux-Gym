@@ -1085,7 +1085,10 @@ footer {
             }
 
             #nav-bar-small {
-                display: none;
+                // display: none;
+                display: grid;
+                background-color: var(--mainBg);
+                place-items: center;
             }
         }
     }

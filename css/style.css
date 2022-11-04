@@ -1176,7 +1176,10 @@ footer .copyright-line img {
     width: 100%;
   }
   #hero-section nav #nav-bar-small {
-    display: none;
+    display: -ms-grid;
+    display: grid;
+    background-color: var(--mainBg);
+    place-items: center;
   }
   .main-content {
     width: 100%;
