@@ -162,13 +162,14 @@ nav .open {
   background-color: var(--mainColor);
   height: 100vh;
   width: 100%;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch;
-  display: -ms-grid;
-  display: grid;
-  margin: 0;
-  place-items: center;
 }
 
 nav .open .nav-links {
@@ -186,6 +187,8 @@ nav .open .nav-links .icon-container {
   gap: 1.5em;
   margin: 28px;
   width: calc(100% - 56px);
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 nav .open .nav-links .icon-container input {
@@ -235,6 +238,7 @@ nav .open .nav-links .icon-container #cart {
 }
 
 nav .open .nav-links ul {
+  height: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,9 +246,9 @@ nav .open .nav-links ul {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -252,6 +256,11 @@ nav .open .nav-links ul {
 
 nav .open .nav-links ul li {
   list-style-type: none;
+}
+
+nav .open #logo {
+  place-self: center;
+  margin: 4em;
 }
 
 nav .nav-bar-large {

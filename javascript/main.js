@@ -12,6 +12,7 @@ const menuBtn = document.getElementById('menu-btn');
 const navEl = document.querySelector('nav');
 const ctaContainer = document.getElementById('cta-container');
 const heroBtn = document.getElementById('hero-btn');
+const navSmall = document.getElementById('nav-bar-small');
 
 if (pref) {
     body.classList.add('darkmode');
@@ -34,6 +35,8 @@ toggleColorPref.addEventListener('click', () => {
 //     // body.classList.toggle('full-screen');
 // })
 
+//  search bar code
+
 searchBtnL.addEventListener('click', () => {
     searchInputL.focus();
 });
@@ -50,4 +53,11 @@ searchBtnS.addEventListener('click', () => {
 deleteBtnS.addEventListener('click', () => {
     searchInputS.value = '';
     searchInputS.focus();
+});
+
+//  search bar code
+
+menuBtn.addEventListener('click', () => {
+    navSmall.classList.toggle('open');
+
 });
