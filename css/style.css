@@ -70,7 +70,6 @@ nav .nav-bar-small {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   margin: 28px;
-  place-items: center;
 }
 
 nav .nav-bar-small .nav-links {
@@ -161,26 +160,19 @@ nav .nav-bar-small a:hover {
 
 nav .open {
   background-color: var(--mainColor);
+  height: 100vh;
+  width: 100%;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  place-items: center;
 }
 
-nav .open ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-nav .open ul li {
-  list-style-type: none;
+nav .open .nav-links {
+  width: 100%;
 }
 
 nav .open .nav-links .icon-container {
@@ -236,6 +228,30 @@ nav .open .nav-links .icon-container .search-bar {
 
 nav .open .nav-links .icon-container .search-bar > * {
   place-self: center;
+}
+
+nav .open .nav-links .icon-container #cart {
+  display: block;
+}
+
+nav .open .nav-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .open .nav-links ul li {
+  list-style-type: none;
 }
 
 nav .nav-bar-large {
