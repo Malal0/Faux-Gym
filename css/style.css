@@ -645,7 +645,7 @@ footer .copyright-line img {
   background-color: transparent;
   border: 2px solid var(--lightText);
   border-radius: 5px;
-  height: 3.5em;
+  height: 2em;
   aspect-ratio: 1;
   padding: 5px;
   margin: 1em;
@@ -1509,5 +1509,8 @@ footer .copyright-line img {
   footer .footer-social-links img {
     height: 1.5em;
     width: 1.5em;
+  }
+  #to-top-of-page-button {
+    height: 2.5em;
   }
 }

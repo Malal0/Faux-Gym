@@ -59,5 +59,11 @@ deleteBtnS.addEventListener('click', () => {
 
 menuBtn.addEventListener('click', () => {
     navSmall.classList.toggle('open');
+    const imageEl = menuBtn.childNodes[1];
 
+    if (navSmall.classList.contains('open')) {
+        imageEl.src = "./images/x-icon.svg"
+    } else {
+        imageEl.src = "./images/menu btn.svg"
+    }
 });
